@@ -49,7 +49,6 @@ function pizza () {
   return (
     <div>
         <img src="pizzas/prosciutto.jpg" alt="Pizza Prosciutto" />
-        <h2>Pizza Prosciutto</h2>
          <p> ingredients: 'Tomato, mozarella, ham, aragula, and burrata cheese',</p>
     </div>
   )

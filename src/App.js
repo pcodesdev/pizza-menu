@@ -2,10 +2,11 @@ import React from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Menu from './components/Menu'
+import './index.css'
 
 function App () {
   return (
-    <div>
+    <div className="container">
     <Header/>
     <Menu/>
     <Footer/>
@@ -15,4 +16,4 @@ function App () {
 
 export default App
 
-// Next: Styling React Applications
+// Next: Props immutability and one way data flow

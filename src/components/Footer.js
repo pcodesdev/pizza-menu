@@ -1,4 +1,5 @@
 import React from 'react'
+import './../index.css'
 
 function Footer () {
   // use of javascript in react demonstration purposes
@@ -16,7 +17,7 @@ function Footer () {
   // }
 
   return (
-    <footer>{currentYear} We're currently open</footer>
+    <footer className="footer">{currentYear} We're currently open</footer>
   )
 }
 

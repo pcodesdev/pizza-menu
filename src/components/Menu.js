@@ -46,7 +46,7 @@ const pizzaData = [
     soldOut: false
   }
 ]
-
+// parent component
 function Menu () {
   return (
     <main className="menu">
@@ -59,7 +59,7 @@ function Menu () {
     />
     <Pizza
     name="Pizza Margherita"
-    ingredients="omato and mozarella"
+    ingredients="Tomato and mozarella"
     photoName="pizzas/margherita.jpg"
     price={10}
     />

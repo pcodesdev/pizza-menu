@@ -1,6 +1,7 @@
 import React from 'react'
 import './../index.css'
 
+// child components
 function pizza (props) {
   console.log(props)
   return (

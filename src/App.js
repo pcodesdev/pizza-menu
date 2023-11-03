@@ -16,4 +16,4 @@ function App () {
 
 export default App
 
-// Next: Props immutability and one way data flow
+// Next: The rule of JSX

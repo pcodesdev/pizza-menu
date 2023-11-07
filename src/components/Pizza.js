@@ -5,15 +5,15 @@ import './../index.css'
 function pizza (props) {
   console.log(props)
   return (
-    <div className="pizza">
-        <img src={props.photoName} alt={props.name} />
+    <li className="pizza">
+        <img src={props.pizzaObj.photoName} alt={props.pizzaObj.name} />
         <div className="">
 
-        <h3>{props.name}</h3>
-         <p>{props.ingredients}</p>
-         <span>{props.price}</span>
-        </div>
-    </div>
+        <h3>{props.pizzaObj.name}</h3>
+         <p>{props.pizzaObj.ingredients}</p>
+         <span>{props.pizzaObj.price}</span>
+         </div>
+    </li>
   )
 }
 

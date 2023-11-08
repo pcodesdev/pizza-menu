@@ -1,5 +1,7 @@
 import React from 'react'
 import './../index.css'
+import OrderTime from './OrderTime'
+import OpenHours from './OpenHours'
 
 function Footer () {
   // use of javascript in react demonstration purposes
@@ -8,7 +10,9 @@ function Footer () {
   const openingTime = 8
   const closingTime = 22
   const isOpen = openStatus >= openingTime && openStatus <= closingTime
-  console.log(isOpen)
+  // console.log(isOpen)
+
+  // const message = openStatus >= openingTime && openStatus <= closingTime ? 'We are currently open' : 'We are currently closed'
 
   // if (openStatus >= openingTime && openStatus <= closingTime) {
   //   alert('We are currently open')
@@ -17,7 +21,16 @@ function Footer () {
   // }
 
   return (
-    <footer className="footer">{currentYear} We're currently open</footer>
+    // conditional rendering using ternary operator
+    <footer className="footer">{currentYear} {isOpen
+      ? (
+    <OrderTime closingHour={closingTime}
+    />
+        )
+      : (
+      <OpenHours openingHour={openingTime}/>
+        )}
+    </footer>
   )
 }
 

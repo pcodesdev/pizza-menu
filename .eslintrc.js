@@ -31,6 +31,7 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 0,
     'react/no-unescaped-entities': 0,
-    'jsx-quotes': [2, 'prefer-double']
+    'jsx-quotes': [2, 'prefer-double'],
+    'react/prop-types': 'off'
   }
 }

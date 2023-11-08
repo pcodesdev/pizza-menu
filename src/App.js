@@ -16,4 +16,4 @@ function App () {
 
 export default App
 
-// Next: The rule of JSX
+// Next: Setting Classes and Text Conditionally

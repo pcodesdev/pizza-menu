@@ -48,13 +48,29 @@ const pizzaData = [
 ]
 // parent component
 function Menu () {
+  const pizzas = pizzaData
+  const numPizzas = pizzas.length
+
   return (
     <main className="menu">
     <h2>Our Menu</h2>
+{/* rect fragment */}
 
-<ul className="pizzas">
-    {pizzaData.map(pizza => <Pizza pizzaObj={pizza} key={pizza.name}/>)}
-</ul>
+  {/* always use ternary operator instead of && operator */}
+  {numPizzas > 0
+    ? (
+  <React.Fragment>
+    <p>Ipsum veniam eiusmod officia officia dolor velit enim do est ullamco eiusmod incididunt enim.</p>
+    <ul className="pizzas">
+      {pizzas.map(pizza => (
+        <Pizza pizzaObj={pizza} key={pizza.name}/>
+      ))}
+    </ul>
+  </React.Fragment>
+      )
+    : (
+  <p>We are still working on our menu please come back later!</p>
+      )}
 
     {/* <Pizza
     name="Focaccia"

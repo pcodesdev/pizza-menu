@@ -5,7 +5,7 @@ import OpenHours from './OpenHours'
 
 function Footer () {
   // use of javascript in react demonstration purposes
-  const currentYear = new Date().getFullYear()
+  // const currentYear = new Date().getFullYear()
   const openStatus = new Date().getHours()
   const openingTime = 8
   const closingTime = 22
@@ -22,7 +22,7 @@ function Footer () {
 
   return (
     // conditional rendering using ternary operator
-    <footer className="footer">{currentYear} {isOpen
+    <footer className="footer">{isOpen
       ? (
     <OrderTime closingHour={closingTime}
     />
